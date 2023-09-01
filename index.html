@@ -1,13 +1,59 @@
----
-layout: presentation
----
+<html>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.google.com/specimen/Saira+Extra+Condensed" rel="stylesheet">
+    <link href="Currículo/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="sidebar">
+
+            <div class="sidebar-pos">
+                <div class="img-sidebar">
+                    <img src="Currículo/assets/imagens/fundo removido de oculos.png">
+                </div>
+                <!--img-->
+
+                <div class="menu">
+                    <a class="selected" href="#"> SOBRE</a>
+                    <a href="#"> EXPERIÊNCIA</a>
+                    <a href="#"> EDUCAÇÃO</a>
+                </div>
+                <!--menu-->
+
+            </div>
+            <!--sidebar-pos-->
+
+        </div>
+        <!--sidebar-->
+
+        <div class="content">
+            <section class="descricao">
+                <h2><span>Erik</span> Henriques de Almeida <span>Lins</span></h2>
+                <h3><p>Endereço: Rua Evaristo da Veiga, 76, Casa Amarela, Recife-PE</p>
+                <p>Telefone: (81) 9 9916-8046</p>
+                <p>Email: eriklins@hotmail.com</h3></p>
+
+               <h3>Sou um desenvolvedor web apaixonado em busca de oportunidades desafiadoras.</h3>
+        
+                <div class="icons-social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lins.erik/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/erik-lins"><i class="fab fa-github"></i></a>
+                </div>
+                <!-- icons-social -->
+            </section>
+        </div>
+        <!--content-->
+
+    </div>
+    <!--parent-->
+
+</body>
+
+</html>
